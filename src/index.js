@@ -107,6 +107,8 @@ class MiniCssExtractPlugin {
     this.options = Object.assign(
       {
         filename: '[name].css',
+        rtlEnabled: false,
+        rtlGlobalVar: undefined,
       },
       options
     );
@@ -251,6 +253,15 @@ class MiniCssExtractPlugin {
               chunk.ids.map((id) => `${JSON.stringify(id)}: 0`).join(',\n')
             ),
             '}',
+            'var isCssRtlEnabled = function() {',
+            Template.indent([
+              `return ${
+                this.options.rtlGlobalVar
+                  ? `window[${JSON.stringify(this.options.rtlGlobalVar)}]`
+                  : 'document.dir'
+              } === 'rtl';`,
+            ]),
+            '}',
           ]);
         }
         return source;
@@ -311,6 +322,10 @@ class MiniCssExtractPlugin {
                 contentHashType: NS,
               }
             );
+            let rtlLinkHrefPath;
+            if (this.options.rtlEnabled) {
+              rtlLinkHrefPath = linkHrefPath.replace(/\.css"$/, '.rtl.css"');
+            }
             return Template.asString([
               source,
               '',
@@ -321,7 +336,9 @@ class MiniCssExtractPlugin {
               Template.indent([
                 'promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {',
                 Template.indent([
-                  `var href = ${linkHrefPath};`,
+                  `var href = ${Boolean(
+                    this.options.rtlEnabled
+                  )} && isCssRtlEnabled() ? ${rtlLinkHrefPath} : ${linkHrefPath};`,
                   `var fullhref = ${mainTemplate.requireFn}.p + href;`,
                   'var existingLinkTags = document.getElementsByTagName("link");',
                   'for(var i = 0; i < existingLinkTags.length; i++) {',

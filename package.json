@@ -1,12 +1,12 @@
 {
-  "name": "mini-css-extract-plugin",
-  "version": "0.4.1",
+  "name": "mini-css-extract-plugin-with-rtl",
+  "version": "0.0.1",
   "description": "desc",
   "license": "MIT",
   "repository": "webpack-contrib/mini-css-extract-plugin",
-  "author": "Tobias Koppers @sokra",
-  "homepage": "https://github.com/webpack-contrib/mini-css-extract-plugin",
-  "bugs": "https://github.com/webpack-contrib/mini-css-extract-plugin/issues",
+  "author": "Maxim Valenko @beshanoe",
+  "homepage": "https://github.com/beshanoe/mini-css-extract-plugin-with-rtl",
+  "bugs": "https://github.com/beshanoe/mini-css-extract-plugin-with-rtl/issues",
   "bin": "",
   "main": "dist/cjs.js",
   "engines": {
