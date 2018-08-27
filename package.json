@@ -1,7 +1,7 @@
 {
   "name": "mini-css-extract-plugin-with-rtl",
   "version": "0.0.1",
-  "description": "desc",
+  "description": "extracts CSS into separate files",
   "license": "MIT",
   "repository": "webpack-contrib/mini-css-extract-plugin",
   "author": "Maxim Valenko @beshanoe",
@@ -43,7 +43,7 @@
     "webpack": "^4.4.0"
   },
   "dependencies": {
-    "@webpack-contrib/schema-utils": "^1.0.0-beta.0",
+    "schema-utils": "^1.0.0",
     "loader-utils": "^1.1.0",
     "webpack-sources": "^1.1.0"
   },
