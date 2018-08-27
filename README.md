@@ -1,4 +1,4 @@
-This plugis is a fork of `mini-css-extract-plugin` but with a support for `WebpackRTLPlugin`. Namely, it allows to load async CSS files depending of page's current direction. Please check mentioned packages to learn how to use them.
+This plugis is a fork of [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) but with a support for [WebpackRTLPlugin](https://github.com/romainberger/webpack-rtl-plugin). Namely, it allows to load async CSS files depending of page's current direction. Please check mentioned packages to learn how to use them.
 
 ```bash
 npm install --save-dev mini-css-extract-plugin-with-rtl
