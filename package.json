@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "extracts CSS into separate files",
   "license": "MIT",
-  "repository": "webpack-contrib/mini-css-extract-plugin",
+  "repository": "beshanoe/mini-css-extract-plugin-with-rtl",
   "author": "Maxim Valenko @beshanoe",
   "homepage": "https://github.com/beshanoe/mini-css-extract-plugin-with-rtl",
   "bugs": "https://github.com/beshanoe/mini-css-extract-plugin-with-rtl/issues",
