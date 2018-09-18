@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.3"></a>
+## [0.1.3](https://github.com/beshanoe/mini-css-extract-plugin-with-rtl/compare/v0.1.2...v0.1.3) (2018-09-18)
+
+
+### Bug Fixes
+
+* package.json repo ([a0c0318](https://github.com/beshanoe/mini-css-extract-plugin-with-rtl/commit/a0c0318))
+
+
+
 <a name="0.4.2"></a>
 ## [0.4.2](https://github.com/webpack-contrib/mini-css-extract-plugin/compare/v0.4.0...v0.4.2) (2018-08-21)
 

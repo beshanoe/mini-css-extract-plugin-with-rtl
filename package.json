@@ -1,6 +1,6 @@
 {
   "name": "mini-css-extract-plugin-with-rtl",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "extracts CSS into separate files",
   "license": "MIT",
   "repository": "beshanoe/mini-css-extract-plugin-with-rtl",
