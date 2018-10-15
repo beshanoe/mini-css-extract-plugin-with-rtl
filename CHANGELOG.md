@@ -2,23 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-<a name="0.4.4"></a>
-## [0.4.4](https://github.com/webpack-contrib/mini-css-extract-plugin/compare/v0.4.3...v0.4.4) (2018-10-10)
+<a name="0.1.3"></a>
+## [0.1.3](https://github.com/beshanoe/mini-css-extract-plugin-with-rtl/compare/v0.1.2...v0.1.3) (2018-09-18)
 
 
 ### Bug Fixes
 
-* **index:** assign empty `module.id` to prevent `contenthash` from changing unnecessarily ([#284](https://github.com/webpack-contrib/mini-css-extract-plugin/issues/284)) ([d7946d0](https://github.com/webpack-contrib/mini-css-extract-plugin/commit/d7946d0))
-
-
-
-<a name="0.4.3"></a>
-## [0.4.3](https://github.com/webpack-contrib/mini-css-extract-plugin/compare/v0.4.2...v0.4.3) (2018-09-18)
-
-
-### Bug Fixes
-
-* **loader:** pass `emitFile` to the child compilation (`loaderContext.emitFile`) ([#177](https://github.com/webpack-contrib/mini-css-extract-plugin/issues/177)) ([18c066e](https://github.com/webpack-contrib/mini-css-extract-plugin/commit/18c066e))
+* package.json repo ([a0c0318](https://github.com/beshanoe/mini-css-extract-plugin-with-rtl/commit/a0c0318))
 
 
 
